@@ -1,0 +1,16 @@
+---
+- name: SM_metadata_add
+  hosts: SM
+  gather_facts: yes
+
+  tasks:
+  - name: Move metadata_add_script.sh to SM
+    ansible.builtin.copy:
+      src: /home/ansible/TxDOT/SM_metadata_add/metadata_add_script.sh
+      dest: /home/ansible/
+      mode: '770'
+      remote_src: false
+
+  - name: Run metadata_add.sh script on SM
+    shell: ./metadata_add_script.sh
+
