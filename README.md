@@ -1,4 +1,4 @@
-- Run each playbook from your Windows machines using a container with Ansible configured. Find instructions on how to pull a container on Windows here: https://skyline.itglue.com/2928607/assets/5089-sops/records/19849059
+- Run each playbook from your Windows machines using a container with Ansible configured.
 	- Please set up of the CentOS SSH key on your Windows Ansible container
 	- ansible.cfg is configured to use private_key_file = /home/ansible/.ssh/centos7_ansible_rsa by default. Please update this to reflect the CentOS7 RSA Key copied from your machine.
 
